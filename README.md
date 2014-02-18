@@ -1,2 +1,2 @@
-mcduder1.github.io
+mcduder.github.io
 ==================
