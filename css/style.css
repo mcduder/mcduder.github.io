@@ -3,7 +3,8 @@ body {
 }
 .content {
   background-color: white;
-  padding: 2% 2% 2% 2%;
+  padding: 0.5% 2% 2% 2%;
+  margin-top: 15%;
 }
 .container {
   max-width: 800px; }
@@ -21,7 +22,7 @@ body {
   margin-bottom: 0;}
 @media (min-width: 550px) {
   .header {
-    margin-top: 18rem; }
+    margin-top: 10rem; }
   .docs-section {
     padding: 6rem 0; }
 }
