@@ -1,10 +1,28 @@
 body {
   background-color: #F2F2F2;
 }
+ul.nolist li {
+  display: inline;
+  list-style: none;
+  padding-right: 10px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 .content {
   background-color: white;
   padding: 0.5% 5% 2% 5%;
   margin-top: 15%;
+  margin-bottom: 5%;
 }
 .container {
   max-width: 1000px; }
