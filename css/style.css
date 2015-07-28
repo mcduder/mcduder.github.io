@@ -3,9 +3,20 @@
 .header {
   margin-top: 6rem;
   text-align: center; }
+.section-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600; }
+.section {
+  border-top: 1px solid #eee;
+  padding: 4rem 0;
+  margin-bottom: 0;}
 @media (min-width: 550px) {
   .header {
     margin-top: 18rem; }
+  .docs-section {
+    padding: 6rem 0; }
 }
 
 @media (min-width: 750px) {
