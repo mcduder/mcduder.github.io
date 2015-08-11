@@ -40,6 +40,9 @@ ul.nolist li {
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;}*/
+.section {
+  padding: 5% 5% 5% 5%;
+}
 .header {
   background-color: white;
   height: 100%;
@@ -47,7 +50,13 @@ ul.nolist li {
 }
 #portfolio {
   background-color: #FF5A14;
-  padding: 5% 5% 5% 5%;
+  color: white;
+}
+#about {
+  color: #FF5A14;
+}
+#contact {
+  background-color: #FF5A14;
   color: white;
 }
 .title {
@@ -60,10 +69,21 @@ ul.nolist li {
 .subtitle {
   text-transform: uppercase;
   font-weight: 600;
-
+}
+.opener {
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
 }
 hr {
   max-width: 80%;
+}
+.centered {
+  text-align: center;
 }
 @media (min-width: 550px) {
   .header {
