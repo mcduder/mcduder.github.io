@@ -1,22 +1,24 @@
 body {
-  background-color: #F2F2F2;
+  /*display: none;*/
+  background-color: white;
 }
 ul.nolist li {
   display: inline;
   list-style: none;
   padding-right: 10px;
 }
-.footer {
+/*.footer {
   position: absolute;
   bottom: 0;
   padding-top: 2rem;
   width: 100%;
   text-align: center;
-  /* Set the fixed height of the footer here */
+  /* Set the fixed height of the footer here 
   height: 60px;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+  max-width: 80%;
 }
 .content {
   background-color: white;
@@ -24,11 +26,11 @@ ul.nolist li {
   margin-top: 15%;
   margin-bottom: 5%;
 }
-.container {
-  max-width: 1000px; }
+.container {}
 .header {
   margin-top: 6rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 80%; }
 .section-header {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -37,12 +39,35 @@ ul.nolist li {
 .section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
-  margin-bottom: 0;}
+  margin-bottom: 0;}*/
+.header {
+  background-color: white;
+  height: 100%;
+  color: #FF5A14;
+}
+#portfolio {
+  background-color: #FF5A14;
+  padding: 5% 5% 5% 5%;
+  color: white;
+}
+.title {
+  text-align: center;
+  padding-top: 15%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+hr {
+  max-width: 80%;
+}
 @media (min-width: 550px) {
   .header {
-    margin-top: 10rem; }
-  .docs-section {
-    padding: 6rem 0; }
+    margin-top: 6.5rem; }
 }
 
 @media (min-width: 750px) {
@@ -78,8 +103,8 @@ ul.nolist li {
     text-decoration: none;
     line-height: 6.5rem;
     color: #222; }
-  .navbar-link.active {
-    color: #33C3F0; }
+  .navbar-link:hover {
+    color: red; }
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
