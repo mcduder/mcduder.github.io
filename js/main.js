@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	resizeDiv();
+	$("body").on("contextmenu", "img", function(e) {
+  		return false;
+	});
 });
 
 window.onresize = function(event) {

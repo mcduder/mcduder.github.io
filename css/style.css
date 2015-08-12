@@ -85,6 +85,10 @@ hr {
 .centered {
   text-align: center;
 }
+.cimg {
+  max-width: 75px;
+  max-height: 75px;
+}
 @media (min-width: 550px) {
   .header {
     margin-top: 6.5rem; }
