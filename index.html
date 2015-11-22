@@ -21,26 +21,31 @@
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
   			ga('create', 'UA-39915429-2', 'auto');
   			ga('send', 'pageview');
 
+  			function scroll(element, parent){
+				$(parent).animate({ scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top }, { duration: 'slow', easing: 'swing'});
+				$('html,body').animate({ scrollTop: $(parent).offset().top - $(window).height() + $(element).height() }, { duration: 1000, easing: 'swing'});
+			}
 		</script>
 	</head>
 	<body class="has-docked-nav">
-		<div class="navbar">
+		<div class="navbar" id="navbar">
 			<div class="container">
 				<ul class="navbar-list">
-					<li class="navbar-item"><a class="navbar-link" href="#">McDuder</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#portfolio">Portfolio</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="McDuder" onclick='scroll("#header", "#header");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="Portfolio" onclick='scroll("#header", "#portfolio");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="About" onclick='scroll("#header", "#about");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="Contact" onclick='scroll("#header", "#contact");'></li>
+					
 				</ul>
 			</div>
 		</div>
 
-		<div class="header">
+		<div class="header" id="header">
 			<h6 class="title">McDuder <br><hr class="hr">Graphic Designer and Web Designer/Developer</h6>
 		</div>
 		<div class="section" id="portfolio">
@@ -79,8 +84,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			
-		</div>
+		<script>
+
+		</script>
 	</body>
 </html>
