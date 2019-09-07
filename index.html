@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>McDuder</title>
+		<title>Azeem</title>
 		<meta name="description" content="A personal portfolio">
-  		<meta name="author" content="McDuder">
+  		<meta name="author" content="Azeem Majid">
 
   		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,7 @@
 
   		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   		<script src="js/main.js"></script>
   		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,28 +25,24 @@
 
   			ga('create', 'UA-39915429-2', 'auto');
   			ga('send', 'pageview');
-
-  			function scroll(element, parent){
-				$(parent).animate({ scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top }, { duration: 'slow', easing: 'swing'});
-				$('html,body').animate({ scrollTop: $(parent).offset().top - $(window).height() + $(element).height() }, { duration: 1000, easing: 'swing'});
-			}
 		</script>
 	</head>
 	<body class="has-docked-nav">
+		<label for="show-menu" class="show-menu">Show Menu</label>
+		<input type="checkbox" id="show-menu" role="button">
 		<div class="navbar" id="navbar">
 			<div class="container">
 				<ul class="navbar-list">
-					<li class="navbar-item"><input type="button" class="navbar-link" value="McDuder" onclick='scroll("#header", "#header");'></li>
-					<li class="navbar-item"><input type="button" class="navbar-link" value="Portfolio" onclick='scroll("#header", "#portfolio");'></li>
-					<li class="navbar-item"><input type="button" class="navbar-link" value="About" onclick='scroll("#header", "#about");'></li>
-					<li class="navbar-item"><input type="button" class="navbar-link" value="Contact" onclick='scroll("#header", "#contact");'></li>
-					
+					<li class="navbar-item"><input type="button" class="navbar-link" value="Azeem" onclick='s("header");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="Portfolio" onclick='s("portfolio");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="About" onclick='s("about");'></li>
+					<li class="navbar-item"><input type="button" class="navbar-link" value="Contact" onclick="s('contact');"></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="header" id="header">
-			<h6 class="title">McDuder <br><hr class="hr">Graphic Designer and Web Designer/Developer</h6>
+			<h6 class="title">Azeem Majid <br><hr class="hr">Graphic Designer and Web Designer/Developer</h6>
 		</div>
 		<div class="section" id="portfolio">
 			<div class="row">
@@ -54,18 +50,32 @@
 			</div>
 			<div class="row">
 				<div class="one-half column">
-					<img class="u-max-full-width" src="img/1.png">
+					<img class="u-max-full-width ppic" src="img/1.png">
 				</div>
 				<div class="one-half column">
-					<img class="u-max-full-width" src="img/2.png">
+					<img class="u-max-full-width ppic" src="img/2.png">
 				</div>
 			</div>
 		</div>
 		<div class="section" id="about">
-			<div class="row">
+			<div>
 				<p class="subtitle">About</p>
-				<h4 class="opener">McDuder</h4>
-				<p class="text">I am McDuder, my pseudonym came when I was about 10 years old and it stuck. I really got interested into computers around the age of 12. I started to making websites around the age of 13. About a year later I got into graphic design and started making photoshops and later designing logos. I soon began to improve my skills.</p>
+				<h4 class="opener">Azeem Majid</h4>
+			</div>
+			<div class="row">
+				
+				<div class="one-half column">
+					I am currently a sophmore in University Of Nevada, Las Vegas. Some of my interests are computer programming, fashion, sneakers, and healthcare.
+				</div>
+				<div class="one-half column">
+					<h5>Qualifications:</h5>
+					<ul>
+						<li>HTML/CSS/JS</li>
+						<li>Javascript</li>
+						<li>Python</li>
+						<li>Java</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="contact">
@@ -77,10 +87,10 @@
 					<a href="http://www.behance.net/mcduder"><img class="cimg" src="img/behance.png"></a>
 				</div>
 				<div class="one-third column centered">
-					<a href="skype:mcduder1?chat"><img class="cimg" src="img/skype.png"></a>
+					<a href="https://twitter.com/__azeem"><img class="cimg" src="img/twitter.png"></a>
 				</div>
 				<div class="one-third column centered">
-					<a href="mailto:mcblood1@gmail.com"><img class="cimg" src="img/email.png"></a>
+					<a href="mailto:azeem.majid2@gmail.com"><img class="cimg" src="img/email.png"></a>
 				</div>
 			</div>
 		</div>
